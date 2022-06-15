@@ -7,26 +7,26 @@ import NavBar from "./Components/NavBar";
 function App() {
   const [posts, setPosts] = useState([
     {
-      name: "Jonathan",
-      postText: "This is the post of posts",
+      name: "Mark French",
+      postText: "You don't need to concern yourself with other people because they will destroy you in the end.",
       isLiked: false,
       isDisliked: false,
     },
     {
-      name: "Kyle",
-      postText: "This is the post of posts",
+      name: "Jordan Potts",
+      postText: "There are a lot of ways to live your life but none more fufilling than giving your life for a greater cause.",
       isLiked: false,
       isDisliked: false,
     },
     {
-      name: "Joel",
-      postText: "This is a poor post",
+      name: "Henry Danger",
+      postText: "Of all the places I've been and all the things I've seen, I can't tell you what I liked most.",
       isLiked: false,
       isDisliked: false,
     },
     {
-      name: "Marshall",
-      postText: "This is the best post",
+      name: "Eric Lopez",
+      postText: "The worse part of what I do is the pay, the best part is the work! I would do it for free.",
       isLiked: false,
       isDisliked: false,
     },
