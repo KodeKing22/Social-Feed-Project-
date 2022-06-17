@@ -4,6 +4,7 @@ import Post from "./Components/Post";
 import CreatePost from "./Components/CreatePost";
 import NavBar from "./Components/NavBar";
 
+
 function App() {
   const [posts, setPosts] = useState([
     {
@@ -31,19 +32,25 @@ function App() {
       isDisliked: false,
     },
   ]);
+    function addNewPost(newPost){
+      
+      let tempPosts = [...posts, newPost];
+      
+      setPosts(tempPosts);
+    }
 
   return (
     <div>
       <div className="container-fluid">
         <div className="row">
-          <h3 style={{ margin: "1em" }}>
+          <h3 style={{ margin: "1em"}}>
             {" "}
             Social
             <small className="text-muted">Feed</small>
           </h3>
         </div>
         <div>
-          <CreatePost />
+          <CreatePost addNewPostProperty={addNewPost}/>
         </div>
         <div>
           <Post />
